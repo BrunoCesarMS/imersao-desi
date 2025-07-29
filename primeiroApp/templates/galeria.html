@@ -5,16 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria de fotos</title>
     <style>
-        body{
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
             font-style: normal;
-            background-color: beige;
+            background-color: whitesmoke;
             justify-content: center;
-        }  
+        }
+        
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2.5rem;         
+            font-weight: bold;         
+            color: #007BFF;             
+            margin-bottom: 1rem;       
+            text-align: center;       
+        }
+
+        a {
+            display: inline-block;
+            margin: 10px 20px;
+            padding: 12px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            justify-items: center;
+        }
+
+        a:hover {
+            background-color: #b30000;
+        } 
+
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .galeria img {
+            width: 45%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        figure {
+            width: 45%;
+            margin: 0;
+            text-align: center;
+        }
+
+        figure img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        figcaption {
+            margin-top: 8px;
+            font-style: italic;
+            color: #555;
+        }
+
+        .centro{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
     <h1 class="galeria">Galeria de fotos</h1>
+
+    <div class="galeria">
+        <figure>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSztXB8TKDjOQ7imfEN8EIrsNYBp3rr7KJNw&s" alt="Parque Nautico">
+            <figcaption>Parque Naútico</figcaption>
+        </figure>
+        
+        <figure>
+            <img src="https://www.temporadalivre.com/uploads/editor/pictures/6a374c6ce921/content_concurso-prefeitura-capao-da-canoa_widelg.jpg" alt="Praia Capao da Canoa">
+            <figcaption>Praia de Capão da Canoa</figcaption>
+        </figure>
+        
+        <figure>
+            <img src="https://acqualokos.com.br/wp-content/uploads/cr%C3%A9dito-Fernando-Pitol-%C3%A1rea-aqu%C3%A1tica-pocket-1024x622.jpg" alt="Acqua Lokos">
+            <figcaption>Parque aquático Acqua Lokos</figcaption>
+        </figure>
+        
+        <figure>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_hZ3Xgwzlqy_pgrR1O7ZV-jRlMDBMpxXO9A&s" alt="Praca mini golf">
+            <figcaption>Praça do Mini‑Golf</figcaption>
+        </figure>     
+    </div>
     
-    <a href="/">Página principal</a>
+    <div class="centro">
+        <a href="/">Página principal</a>
+    </div>
 </body>
 </html>
